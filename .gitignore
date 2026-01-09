@@ -1,0 +1,96 @@
+﻿# .gitignore for F# / .NET projects
+# Targets: Visual Studio, JetBrains Rider, VS Code (Ionide), FAKE, Paket, NuGet
+# Note: it's recommended to commit `paket.dependencies` and `paket.lock`; we ignore Paket's generated files (paket-files etc.).
+
+# -------------------------
+# Build / bin / obj
+# -------------------------
+bin/
+obj/
+**/bin/
+**/obj/
+artifacts/
+publish/
+
+# -------------------------
+# Visual Studio
+# -------------------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# -------------------------
+# JetBrains Rider
+# -------------------------
+.idea/
+*.sln.iml
+
+# -------------------------
+# VS Code / Ionide
+# -------------------------
+.vscode/
+
+# -------------------------
+# Paket / FAKE / NuGet
+# -------------------------
+.paket/
+paket-files/
+.fake/
+packages/
+*.nupkg
+
+# Do NOT ignore: paket.dependencies and paket.lock — keep these in source control for reproducible restores.
+
+# -------------------------
+# Test results / coverage
+# -------------------------
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+# -------------------------
+# Logs and database files
+# -------------------------
+*.log
+*.sql
+*.sqlite
+*.db
+
+# -------------------------
+# OS generated files
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# Editor temporary files
+# -------------------------
+*~
+*.swp
+*.swo
+*.tmp
+*.temp
+*.orig
+
+# -------------------------
+# ReSharper
+# -------------------------
+_ReSharper*/
+*._ReSharper*/
+*.ReSharper
+
+# -------------------------
+# Misc
+# -------------------------
+*.bak
+*.backup
+*.msi
+*.log
+
+# End of file
+

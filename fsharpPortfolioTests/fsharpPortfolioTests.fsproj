@@ -1,0 +1,28 @@
+﻿<!-- fsharpPortfolioTests/fsharpPortfolioTests.fsproj -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <RootNamespace>fsharpPortfolioTests</RootNamespace>
+        <OutputType>Exe</OutputType>
+        <IsPackable>false</IsPackable>
+        <GenerateProgramFile>false</GenerateProgramFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Program is the Expecto test runner entry point -->
+        <!-- F# compile order matters: dependencies first -->
+        <Compile Include="Week1Tests.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Week1\Week1.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Expecto" Version="10.2.3" />
+    </ItemGroup>
+
+</Project>
+
